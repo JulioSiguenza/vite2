@@ -1,0 +1,58 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
+
+.imagen-texto-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagen-container {
+    flex-basis: 33%;
+}
+
+.imagen-container img {
+    max-width: 100%;
+}
+
+.texto-container {
+    flex-basis: 66%;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .imagen-texto-container {
+        flex-direction: column;
+    }
+
+    .texto-container {
+        padding-left: 0;
+        padding-top: 30px;
+        flex-basis: 100%;
+    }
+}
+.texto-container {
+    background-color: #f9f9f9;
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.texto-container.animate__animated.animate__fadeInUp {
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+.texto-container {
+    padding: 2rem;
+    background-color: #555;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+}
